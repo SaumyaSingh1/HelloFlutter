@@ -6,15 +6,23 @@ void main() //starting point of application
   
     MaterialApp(
     title:"Saumya's Flutter App",
-     home: Material(
-     color: Colors.purple,
-     child: Center
-        (
-        child: Text(
-            "Hello Flutter!❤", textDirection: TextDirection.ltr
-        )
-        )
-      ,)
-      )
+     home: Scaffold(
+     appBar: AppBar(title: Text("Saumya's First Flutter App")),
+     body: Material(
+       color: Colors.blue,
+       child: Center
+         (
+           child: Text(
+             "Hello Flutter!❤",
+             textDirection: TextDirection.ltr,
+             style: TextStyle(
+                 color: Colors.black, fontSize: 40.0
+             ),
+           )
+       )
+     )
+     )
+     )
+     
       );
 }
